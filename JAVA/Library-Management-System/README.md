@@ -44,6 +44,8 @@ Java Time API (LocalDate)
 Console-based UI
 Project Structure
 
+
+
 com.library
 │
 ├── main
@@ -57,6 +59,7 @@ com.library
 │
 ├── service
 │   └── LibraryService.java
+
 
 How to Run
 Clone the repository
@@ -112,6 +115,7 @@ Fine reports
 
 Author
 Gaddam Sri Vidya
+
 Developed as a learning project to understand Java OOP and system design basics.
 
 ⭐ If you like this project
