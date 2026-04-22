@@ -1,10 +1,10 @@
-# Smart Expense Tracker (Python)
+##  Smart Expense Tracker (Python)
 
- Project Description
+ # Project Description
 
 Smart Expense Tracker is a command-line Python application that helps users track daily expenses, analyze monthly spending, and visualize category-wise insights using charts.
 
- Features
+ # Features
 
 * Add expenses
 *  Monthly summary
@@ -14,20 +14,20 @@ Smart Expense Tracker is a command-line Python application that helps users trac
 *  CSV data storage
 
 
-Technologies Used
+# Technologies Used
 
 * Python
 * Pandas
 * Matplotlib
   
-Project Structure
+# Project Structure
 
 expense_tracker.py
 expenses.csv
 category_pie.png
 README.md
 
-Sample Input (expenses.csv)
+# Sample Input (expenses.csv)
 
 date,category,amount,description
 2026-04-11,Shopping,2000.0,Shooping
@@ -66,27 +66,17 @@ Budget: ₹10000.00
 You exceeded your monthly budget!
  Highest Spending Category: Travel
 
-
- Pie Chart Output
-
-* A pie chart will be displayed showing category-wise spending.
-* You can save it as `category_pie.png` by modifying code:
-
-python
-plt.savefig("category_pie.png")
-
- How to Run
+# How to Run
 
  Step 1: Install dependencies
 
  pip install pandas matplotlib
 
  Step 2: Run the program
+ 
+ python expense_tracker.py
 
-
-python expense_tracker.py
-
- How It Works
+ # How It Works
 
 * Reads expenses from CSV file
 * Filters current month data
@@ -94,14 +84,14 @@ python expense_tracker.py
 * Finds highest spending using `idxmax()`
 * Visualizes using pie chart
   
- Future Improvements
+ # Future Improvements
 
 * GUI using Tkinter
 * Web version (React + Flask)
 * Export reports (PDF/Excel)
 * Smart spending suggestions
 
-Author
+# Author
 
 Gaddam Srividya
 
