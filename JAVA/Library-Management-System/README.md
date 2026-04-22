@@ -1,4 +1,4 @@
-Library Management System (Java)
+##Library Management System (Java)
 Project Overview
 
 The Library Management System is a console-based Java application designed to automate basic library operations such as book management, user registration, and transaction tracking (issue/return of books).
@@ -119,6 +119,3 @@ Gaddam Sri Vidya
 
 Developed as a learning project to understand Java OOP and system design basics.
 
-If you like this project
-
-Give it a on GitHub and feel free to improve it!
