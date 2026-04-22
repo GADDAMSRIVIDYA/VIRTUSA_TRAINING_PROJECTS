@@ -1,4 +1,4 @@
-🏥 Hospital Management & Patient Analytics System
+Hospital Management & Patient Analytics System
  Project Overview
 
 The Hospital Management & Patient Analytics System is a SQL-based project designed to efficiently manage hospital data such as patients, doctors, appointments, and treatments. It also provides analytical insights to improve hospital operations and decision-making.
