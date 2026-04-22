@@ -1,10 +1,10 @@
-# 🚀 My Projects Portfolio
+# My Projects Portfolio
 
 Welcome to my project repository! This contains projects developed in Java, Python, and SQL.
 
 ---
 
-## 🌟 Highlights
+## Highlights
 
 * Multi-language projects (Java, Python, SQL)
 * Real-world problem solving
@@ -13,9 +13,9 @@ Welcome to my project repository! This contains projects developed in Java, Pyth
 
 ---
 
-## 📌 1. Java Project
+## 1. Java Project
 
-### 📚 Library Management System
+### Library Management System
 
 A console-based application to manage library operations.
 
@@ -31,13 +31,13 @@ A console-based application to manage library operations.
 * Java
 * OOP Concepts
 
-📁 Path: `JAVA/Library-Management-System/`
+Path: `JAVA/Library-Management-System/`
 
 ---
 
-## 📌 2. Python Project
+## 2. Python Project
 
-### 💰 Smart Expense Tracker
+### Smart Expense Tracker
 
 A Python-based application to track and analyze daily expenses.
 
@@ -54,13 +54,13 @@ A Python-based application to track and analyze daily expenses.
 * Pandas
 * Matplotlib
 
-📁 Path: `PYTHON/smart-expense-tracker/`
+Path: `PYTHON/smart-expense-tracker/`
 
 ---
 
-## 📌 3. SQL Project
+## 3. SQL Project
 
-### 🏥 Hospital Management & Patient Analytics System
+### Hospital Management & Patient Analytics System
 
 A database system to manage hospital records and perform analytics.
 
@@ -70,7 +70,7 @@ A database system to manage hospital records and perform analytics.
 * Track treatments and costs
 * Perform data analysis
 
-#### 📊 Analytics Performed
+#### Analytics Performed
 
 * Most consulted doctors
 * Monthly revenue
@@ -78,15 +78,15 @@ A database system to manage hospital records and perform analytics.
 * Patient visit frequency
 * Doctor performance
 
-#### 🛠️ Tech Used
+#### Tech Used
 
 * MySQL
 
-📁 Path: `SQL/hospital-management-patient-analytics/`
+Path: `SQL/hospital-management-patient-analytics/`
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 VIRTUSA_TRAINING_PROJECTS/
@@ -113,7 +113,7 @@ VIRTUSA_TRAINING_PROJECTS/
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Gaddam Srividya**
 ---
