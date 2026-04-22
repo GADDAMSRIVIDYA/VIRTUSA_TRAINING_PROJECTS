@@ -1,4 +1,4 @@
-# 💰 Smart Expense Tracker (Python)
+# Smart Expense Tracker (Python)
 
  Project Description
 
@@ -51,7 +51,7 @@ Monthly Summary
 MONTHLY SUMMARY
 Total Spending: ₹24700.00
 Monthly Budget: ₹10000.00
-⚠️ ALERT: Budget Exceeded!
+ALERT: Budget Exceeded!
 Over Budget: ₹14700.00
 
 Category Insights
@@ -63,7 +63,7 @@ Shopping    7000
 
 Total Spending: ₹24700.00
 Budget: ₹10000.00
-⚠️ You exceeded your monthly budget!
+You exceeded your monthly budget!
  Highest Spending Category: Travel
 
 
