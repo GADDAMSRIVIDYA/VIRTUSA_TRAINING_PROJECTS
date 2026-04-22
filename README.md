@@ -101,7 +101,12 @@ VIRTUSA_TRAINING_PROJECTS/
 │                   └── service/
 │
 ├── PYTHON/
-│   └── smart-expense-tracker/
+│   hospital-management-patient-analytics/
+|   |───data/
+|   |───queries/
+|   |───schema/
+|   |───screenshots/
+|   |───README.md
 │
 └── SQL/
     └── hospital-management-patient-analytics/
