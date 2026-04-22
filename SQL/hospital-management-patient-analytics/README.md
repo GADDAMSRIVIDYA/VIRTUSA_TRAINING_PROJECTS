@@ -46,6 +46,7 @@ Key Features / Tasks
 * Analyze hospital performance
 
  SQL Analytics Queries
+ 
 🔹 Most Consulted Doctors
 
 Find doctors with maximum patient visits.
