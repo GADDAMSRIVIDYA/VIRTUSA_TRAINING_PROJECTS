@@ -22,13 +22,16 @@ Smart Expense Tracker is a command-line Python application that helps users trac
   
 # Project Structure
 
-expense_tracker.py
-expenses.csv
-category_pie.png
-README.md
+├── PYTHON/
+  hospital-management-patient-analytics/
+  |───data/
+  |───queries/
+  |───schema/
+  |───screenshots/
+  └── README.md
 
 # Sample Input (expenses.csv)
-
+```
 date,category,amount,description
 2026-04-11,Shopping,2000.0,Shooping
 2026-04-10,Food,500.0,biriyani
@@ -42,6 +45,7 @@ date,category,amount,description
 2026-04-11,Travel,6000.0,travle
 2026-04-11,Shopping,5000.0,dress
 2026-04-11,Food,200.0,cury
+```
 
 
 Sample Output
