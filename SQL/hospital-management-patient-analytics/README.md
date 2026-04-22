@@ -85,14 +85,15 @@ Run hospital.sql file
 
 Execute queries step-by-step
 
-📂 Project Structure
+```
+Project Structure
 hospital-management-patient-analytics/
 ├───data
 ├───queries
 ├───schema
 └───screenshots
 ├── README.md
-
+```
 
 Outcome
 
