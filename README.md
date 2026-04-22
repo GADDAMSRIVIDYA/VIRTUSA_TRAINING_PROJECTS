@@ -19,7 +19,7 @@ Welcome to my project repository! This contains projects developed in Java, Pyth
 
 A console-based application to manage library operations.
 
-#### 🔹 Features
+####  Features
 
 * Add books
 * Register users
@@ -41,7 +41,7 @@ Path: `JAVA/Library-Management-System/`
 
 A Python-based application to track and analyze daily expenses.
 
-#### 🔹 Features
+####  Features
 
 * Add daily expenses
 * Categorize spending
@@ -64,7 +64,7 @@ Path: `PYTHON/smart-expense-tracker/`
 
 A database system to manage hospital records and perform analytics.
 
-#### 🔹 Features
+####  Features
 
 * Manage patients, doctors, appointments
 * Track treatments and costs
@@ -93,6 +93,7 @@ VIRTUSA_TRAINING_PROJECTS/
 │
 ├── JAVA/
 │   └── Library-Management-System/
+|       ├── README.md  
 │       └── src/
 │           └── com/
 │               └── library/
@@ -106,14 +107,16 @@ VIRTUSA_TRAINING_PROJECTS/
 |   |───queries/
 |   |───schema/
 |   |───screenshots/
-|   |───README.md
+|   └── README.md
 │
 └── SQL/
     └── hospital-management-patient-analytics/
         ├── data/
         ├── queries/
         ├── schema/
-        └── screenshots/
+        ├── screenshots/
+        └── README.md
+        
 ```
 
 ---
