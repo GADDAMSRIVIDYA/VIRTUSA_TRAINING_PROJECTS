@@ -48,7 +48,7 @@ A Python-based application to track and analyze daily expenses.
 * Monthly insights
 * Data visualization
 
-#### 🛠️ Tech Used
+#### Tech Used
 
 * Python
 * Pandas
