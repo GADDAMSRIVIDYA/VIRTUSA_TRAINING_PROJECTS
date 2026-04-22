@@ -45,7 +45,7 @@ Console-based UI
 Project Structure
 
 
-
+```
 com.library
 │
 ├── main
@@ -60,6 +60,7 @@ com.library
 ├── service
 │   └── LibraryService.java
 
+```
 
 How to Run
 Clone the repository
