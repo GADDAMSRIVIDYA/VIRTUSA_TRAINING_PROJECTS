@@ -1,17 +1,17 @@
 ## Library Management System (Java)
-Project Overview
+# Project Overview
 
 The Library Management System is a console-based Java application designed to automate basic library operations such as book management, user registration, and transaction tracking (issue/return of books).
 
 It demonstrates Object-Oriented Programming (OOP) concepts in Java including classes, objects, enums, and service-layer architecture.
 
-Objectives
+# Objectives
 Manage books, users, and transactions efficiently
 Track issued and returned books
 Automate library operations to reduce manual effort
 
 Implement role-based access control (Admin/User)
-Features
+# Features
 
 Book Management
 Add new books
@@ -35,14 +35,14 @@ Title
 Author
 Book ID
 
-Technologies Used
+# Technologies Used
 Java (Core Java)
 OOP Concepts
 Collections Framework
 Java Time API (LocalDate)
 
 Console-based UI
-Project Structure
+ # Project Structure
 
 
 ```
@@ -92,7 +92,7 @@ Welcome Admin
 3. Issue Book
 4. Logout
 
-Future Improvements
+# Future Improvements
 1. Database Integration (JDBC + MySQL)
 Store users, books, and transactions permanently
 Replace in-memory lists with database tables
@@ -114,7 +114,7 @@ Most issued books
 User activity logs
 Fine reports
 
-Author
+ # Author
 Gaddam Sri Vidya
 
 Developed as a learning project to understand Java OOP and system design basics.
