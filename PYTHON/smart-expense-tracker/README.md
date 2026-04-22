@@ -21,6 +21,7 @@ Smart Expense Tracker is a command-line Python application that helps users trac
 * Matplotlib
   
 # Project Structure
+```
 
 ├── PYTHON/
   hospital-management-patient-analytics/
@@ -29,6 +30,7 @@ Smart Expense Tracker is a command-line Python application that helps users trac
   |───schema/
   |───screenshots/
   └── README.md
+```
 
 # Sample Input (expenses.csv)
 ```
@@ -49,9 +51,7 @@ date,category,amount,description
 
 
 Sample Output
-
-Monthly Summary
-
+```
 MONTHLY SUMMARY
 Total Spending: ₹24700.00
 Monthly Budget: ₹10000.00
@@ -68,8 +68,8 @@ Shopping    7000
 Total Spending: ₹24700.00
 Budget: ₹10000.00
 You exceeded your monthly budget!
- Highest Spending Category: Travel
-
+Highest Spending Category: Travel
+```
 # How to Run
 
  Step 1: Install dependencies
