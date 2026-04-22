@@ -47,23 +47,23 @@ Key Features / Tasks
 
  SQL Analytics Queries
  
-🔹 Most Consulted Doctors
+* Most Consulted Doctors
 
 Find doctors with maximum patient visits.
 
-🔹 Total Revenue per Month
+* Total Revenue per Month
 
 Calculate total income generated from treatments.
 
-🔹 Most Common Diseases
+* Most Common Diseases
 
 Identify frequently diagnosed diseases.
 
-🔹 Patient Visit Frequency
+* Patient Visit Frequency
 
 Track how often patients visit the hospital.
 
-🔹 Doctor Performance Analysis
+* Doctor Performance Analysis
 
 Evaluate doctors based on number of patients treated.
 
