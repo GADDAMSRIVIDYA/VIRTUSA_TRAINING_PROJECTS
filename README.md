@@ -26,7 +26,7 @@ A console-based application to manage library operations.
 * Issue & return books
 * Search books
 
-#### 🛠️ Tech Used
+#### Tech Used
 
 * Java
 * OOP Concepts
