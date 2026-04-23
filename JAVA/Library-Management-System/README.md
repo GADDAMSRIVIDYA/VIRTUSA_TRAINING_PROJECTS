@@ -46,20 +46,25 @@ Console-based UI
 
 
 ```
-com.library
-│
-├── main
-│   └── Main.java
-│
-├── model
-│   ├── Book.java
-│   ├── User.java
-│   ├── Role.java
-│   └── Transaction.java
-│
-├── service
-│   └── LibraryService.java
-
+Library-Management-System/
+│── src/com/library
+│   ├── main/
+│   │   ├── Main.java
+│   │   └── Main.class
+│   ├── model
+│   │   ├── Book.java
+│   │   ├── Book.class
+│   │   ├── User.java
+|   |   ├── User.class
+│   │   ├── Role.java
+|   |   ├── Role.class
+│   │   ├── Transaction.java
+|   |   └── Transaction.class
+│   └── service
+|   |   ├── LibraryService.java
+|   │   └── LibraryService.class
+|   └──Screenshots/ # contains ouput images
+└──README.md
 ```
 
 How to Run
