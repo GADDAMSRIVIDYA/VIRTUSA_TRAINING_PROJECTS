@@ -23,11 +23,13 @@ Smart Expense Tracker is a command-line Python application that helps users trac
 # Project Structure
 ```
 
-smart-expense-tracker/
-├── main.py
-├── category_pie.png
-├── expenses.csv
-└── README.md
+PYTHON
+├──smart-expense-tracker/
+|  ├── main.py
+|  ├── category_pie.png
+|  ├── expenses.csv
+|  └── README.md
+└── Screenshots/ # contains project output images
 
 ```
 
@@ -38,31 +40,24 @@ smart-expense-tracker/
 
 # Sample Output
 
-
-# How to Run
-
- Step 1: Install dependencies
-
- pip install pandas matplotlib
-
- Step 2: Run the program
- 
- python expense_tracker.py
-
- # How It Works
-
-* Reads expenses from CSV file
-* Filters current month data
-* Groups data by category using `groupby()`
-* Finds highest spending using `idxmax()`
-* Visualizes using pie chart
+* Add Expenses
   
- # Future Improvements
+  ![addexpenses](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/addExpenses.jpeg)
+* MOnthly Summary
+  
+  ![MonthlySummary](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/MonthlySummary.jpeg)
 
-* GUI using Tkinter
-* Web version (React + Flask)
-* Export reports (PDF/Excel)
-* Smart spending suggestions
+* Category Insights
+
+  ![CategoryInsights](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/CategoryInsights.jpeg)
+* pie Chart
+    
+  ![pie Chart](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/pieChart.jpeg)
+
+* Exit
+  
+  ![exit](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/exit.jpeg)
+
 
 # Author
 
