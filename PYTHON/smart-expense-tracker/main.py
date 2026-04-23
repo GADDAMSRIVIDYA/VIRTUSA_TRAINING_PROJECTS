@@ -8,7 +8,6 @@ CATEGORIES = ['Food', 'Travel', 'Bills', 'Entertainment', 'Shopping', 'Other']
 FILE_NAME = 'expenses.csv'
 MONTHLY_BUDGET = 10000
 
-
 # ---------------- LOAD DATA ----------------
 def load_data():
     if os.path.exists(FILE_NAME):
@@ -19,7 +18,6 @@ def load_data():
 
     return pd.DataFrame(columns=['date', 'category', 'amount', 'description'])
 
-
 # ---------------- GET MONTH DATA (COMMON FUNCTION) ----------------
 def get_month_data(df):
     now = datetime.now()
@@ -27,7 +25,6 @@ def get_month_data(df):
         (df['date'].dt.year == now.year) &
         (df['date'].dt.month == now.month)
     ]
-
 
 # ---------------- ADD EXPENSE ----------------
 def add_expense(df):
@@ -81,7 +78,6 @@ def add_expense(df):
 
     return df
 
-
 # ---------------- MONTHLY SUMMARY ----------------
 def monthly_summary(df):
     if df.empty:
@@ -108,7 +104,6 @@ def monthly_summary(df):
 
     print("\nDetailed Expenses:")
     print(month_data[['date', 'category', 'amount', 'description']])
-
 
 # ---------------- CATEGORY INSIGHTS ----------------
 def category_insights(df):
@@ -176,7 +171,6 @@ def main():
 
         else:
             print("Invalid choice")
-
 
 if __name__ == "__main__":
     main()
