@@ -6,7 +6,7 @@ Smart Expense Tracker is a command-line Python application that helps users trac
 
  # Features
 
-* Add expenses
+*  Add expenses
 *  Monthly summary
 *  Category insights
 *  Pie chart visualization
@@ -23,53 +23,22 @@ Smart Expense Tracker is a command-line Python application that helps users trac
 # Project Structure
 ```
 
-├── PYTHON/
-  hospital-management-patient-analytics/
-  |───data/
-  |───queries/
-  |───schema/
-  |───screenshots/
-  └── README.md
+smart-expense-tracker/
+├── main.py
+├── category_pie.png
+├── expenses.csv
+└── README.md
+
 ```
 
 # Sample Input (expenses.csv)
-```
-date,category,amount,description
-2026-04-11,Shopping,2000.0,Shooping
-2026-04-10,Food,500.0,biriyani
-2026-03-02,Travel,5000.0,hyderabad
-2026-04-11,Food,500.0,food
-2026-03-11,Travel,5000.0,traveling
-2026-03-12,Shopping,2000.0,shopping
-2026-04-12,Food,500.0,biriyani
-2026-04-12,Travel,5000.0,uber
-2026-04-11,Food,5000.0,biriyani
-2026-04-11,Travel,6000.0,travle
-2026-04-11,Shopping,5000.0,dress
-2026-04-11,Food,200.0,cury
-```
+
+[CSV File Input](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/smart-expense-tracker/expenses.csv)
 
 
-Sample Output
-```
-MONTHLY SUMMARY
-Total Spending: ₹24700.00
-Monthly Budget: ₹10000.00
-ALERT: Budget Exceeded!
-Over Budget: ₹14700.00
+# Sample Output
 
-Category Insights
 
- CATEGORY BREAKDOWN
-Food        6200
-Travel     11000
-Shopping    7000
-
-Total Spending: ₹24700.00
-Budget: ₹10000.00
-You exceeded your monthly budget!
-Highest Spending Category: Travel
-```
 # How to Run
 
  Step 1: Install dependencies
