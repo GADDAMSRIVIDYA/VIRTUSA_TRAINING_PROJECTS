@@ -1,5 +1,6 @@
-## Library Management System (Java)
-# Project Overview
+<h1 align="center">Library Management System</h1>
+
+### Project Overview
 
 The Library Management System is a console-based Java application designed to automate basic library operations such as book management, user registration, and transaction tracking (issue/return of books).
 
@@ -11,30 +12,43 @@ Track issued and returned books
 Automate library operations to reduce manual effort
 
 Implement role-based access control (Admin/User)
-# Features
 
-Book Management
-Add new books
-View all available books
-Track issued status
+### Features
 
-User Management
-User registration system
-Role-based access (ADMIN / USER)
+#### Admin
 
-Transaction System
-Issue books to users
-Return books
-Track issue and return dates
 
-Fine Calculation
-Calculates fine for late returns (beyond 7 days)
-Search Functionality
-Search books by:
-Title
-Author
-Book ID
+* Registeration & Login
+  
+  ![Registeration & Login](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/Resgistration.jpeg)
 
+* Admin Menu
+  
+  ![adminMenu](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/adminMenu.jpeg)
+
+* Add Book
+  
+  ![addBook](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/addBook.jpeg)
+
+* Issue Book and Show Book
+  
+  ![issueBook&ShowBook](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/issueBook%20and%20ShowBooks.jpeg)
+
+* logout:
+  
+  ![logout](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/Logout.jpeg)
+
+### User
+
+* Registeration & Login
+  
+  ![userRegister&userLogin](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/userRegister%20and%20userLogin.jpeg)
+
+* Show Book and Return Book
+  
+  ![showBookAndReturnBook](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/JAVA/Library-Management-System/Screenshots/userMenu.jpeg)
+
+ 
 # Technologies Used
 Java (Core Java)
 OOP Concepts
@@ -67,58 +81,13 @@ Library-Management-System/
 └──README.md
 ```
 
-How to Run
-Clone the repository
-git clone https://github.com/your-username/library-management-system.git
-Open in any Java IDE (IntelliJ / Eclipse / VS Code)
 
-Compile and run:
-javac Main.java
-
-java Main
-
-Key OOP Concepts Used
-Encapsulation (private fields with getters/setters)
-Abstraction (Service layer handling logic)
-Enum (Role-based access control)
-Classes & Objects
-List Collections
-
-Sample Output
-===== LIBRARY SYSTEM =====
-1. Register
-2. Login
-3. Exit
-
-Welcome Admin
-
-===== ADMIN MENU =====
-1. Add Book
-2. Show Books
-3. Issue Book
-4. Logout
-
-# Future Improvements
-1. Database Integration (JDBC + MySQL)
-Store users, books, and transactions permanently
-Replace in-memory lists with database tables
-
-2. Advanced Role-Based System
-Separate permissions for Admin and Users
-Admin approval for user registration
-Multiple admin roles (Super Admin / Librarian)
-
-3. Due Date System
-Add due date for each issued book
-Auto fine calculation based on delay
-
-4. GUI Version
-Build UI using Java Swing or JavaFX
-
-5. Reports & Analytics
-Most issued books
-User activity logs
-Fine reports
+### Key OOP Concepts Used
+* Encapsulation (private fields with getters/setters)
+* Abstraction (Service layer handling logic)
+* Enum (Role-based access control)
+* Classes & Objects
+* List Collections
 
  # Author
 Gaddam Sri Vidya
