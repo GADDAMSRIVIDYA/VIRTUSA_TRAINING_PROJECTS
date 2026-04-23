@@ -74,7 +74,7 @@ def add_expense(df):
     print(f"Budget Limit: ₹{MONTHLY_BUDGET:.2f}")
 
     if total > MONTHLY_BUDGET:
-        print("⚠️ ALERT: Budget Exceeded!")
+        print("ALERT: Budget Exceeded!")
         print(f"Over by: ₹{total - MONTHLY_BUDGET:.2f}")
     else:
         print(f"Remaining Budget: ₹{MONTHLY_BUDGET - total:.2f}")
@@ -101,7 +101,7 @@ def monthly_summary(df):
     print(f"Monthly Budget: ₹{MONTHLY_BUDGET:.2f}")
 
     if total > MONTHLY_BUDGET:
-        print("⚠️ ALERT: Budget Exceeded!")
+        print("ALERT: Budget Exceeded!")
         print(f"Over Budget: ₹{total - MONTHLY_BUDGET:.2f}")
     else:
         print(f"Remaining Budget: ₹{MONTHLY_BUDGET - total:.2f}")
@@ -133,7 +133,7 @@ def category_insights(df):
     print(f"Budget: ₹{MONTHLY_BUDGET:.2f}")
 
     if total > MONTHLY_BUDGET:
-        print("⚠️ You exceeded your monthly budget!")
+        print("You exceeded your monthly budget!")
 
     if not category_total.empty:
         top_category = category_total.idxmax()
