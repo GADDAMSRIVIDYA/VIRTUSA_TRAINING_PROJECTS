@@ -61,7 +61,7 @@ Console-based UI
 
 ```
 Library-Management-System/
-│── src/com/library
+│── src/com/library/
 │   ├── main/
 │   │   ├── Main.java
 │   │   └── Main.class
