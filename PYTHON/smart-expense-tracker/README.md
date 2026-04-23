@@ -25,10 +25,10 @@ Smart Expense Tracker is a command-line Python application that helps users trac
 
 PYTHON
 ├── smart-expense-tracker/
-|  ├── main.py
-|  ├── category_pie.png
-|  ├── expenses.csv
-|  └── README.md
+|   ├── main.py
+|   ├── category_pie.png
+|   ├── expenses.csv
+|   └── README.md
 └── Screenshots/ # contains project output images
 
 ```
