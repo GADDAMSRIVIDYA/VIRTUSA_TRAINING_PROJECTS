@@ -1,4 +1,5 @@
-##  Smart Expense Tracker (Python)
+
+<h1 align="center">Smart Expense Tracker</h1>
 
  # Project Description
 
@@ -43,7 +44,7 @@ PYTHON
 * Add Expenses
   
   ![addexpenses](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/addExpenses.jpeg)
-* MOnthly Summary
+* Monthly Summary
   
   ![MonthlySummary](https://github.com/GADDAMSRIVIDYA/VIRTUSA_TRAINING_PROJECTS/blob/main/PYTHON/Screenshots/MonthlySummary.jpeg)
 
