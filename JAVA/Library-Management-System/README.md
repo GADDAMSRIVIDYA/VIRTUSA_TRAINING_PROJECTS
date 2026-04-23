@@ -65,7 +65,7 @@ Library-Management-System/
 │   ├── main/
 │   │   ├── Main.java
 │   │   └── Main.class
-│   ├── model
+│   ├── model/
 │   │   ├── Book.java
 │   │   ├── Book.class
 │   │   ├── User.java
@@ -74,7 +74,7 @@ Library-Management-System/
 |   |   ├── Role.class
 │   │   ├── Transaction.java
 |   |   └── Transaction.class
-│   └── service
+│   └── service/
 |   |   ├── LibraryService.java
 |   │   └── LibraryService.class
 |   └──Screenshots/ # contains ouput images
