@@ -1,186 +1,204 @@
 package com.library.main;
 
-import com.library.model.Book;
-import com.library.model.Role;
-import com.library.model.User;
-import com.library.service.LibraryService;
-
+import com.library.model.*;
+import com.library.service.*;
 import java.util.Scanner;
+import com.library.util.InputUtil;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
-        LibraryService service = new LibraryService();
+        Scanner scanner = new Scanner(System.in);
+        UserService userService = new UserService();
+        BookService bookService = new BookService();
 
-        while (true) {
+        boolean running = true; 
 
-            System.out.println("\n===== LIBRARY SYSTEM =====");
+        while(running){
+            System.out.println("\n===== LIBRARY MANAGEMENT SYSTEM =====");
             System.out.println("1. Register");
             System.out.println("2. Login");
             System.out.println("3. Exit");
+
             System.out.print("Enter choice: ");
+            int choice = InputUtil.getInt(scanner);
 
-            try {
-                int choice = Integer.parseInt(sc.nextLine());
+            switch(choice){
 
-                switch (choice) {
+                case 1:
+                    System.out.print("Enter name: ");
+                    String name = InputUtil.getString(scanner);
 
-                    // ================= REGISTER =================
-                    case 1:
-                        System.out.print("Enter User ID: ");
-                        int id = Integer.parseInt(sc.nextLine());
+                    System.out.print("Enter email: ");
+                    String email = InputUtil.getString(scanner);
 
-                        System.out.print("Enter Name: ");
-                        String name = sc.nextLine();
+                    System.out.print("Enter password: ");
+                    String password = InputUtil.getString(scanner);
 
-                        // default role always user
-                        service.addUser(new User(id, name, Role.USER));
-                        break;
+                    System.out.print("Enter role (ADMIN/USER): ");
+                    String roleInput = InputUtil.getString(scanner);
 
-                    // ================= LOGIN =================
-                    case 2:
-                        System.out.print("Enter User ID: ");
-                        int loginId = Integer.parseInt(sc.nextLine());
+                    Role role;
+                    try {
+                        role = Role.valueOf(roleInput.toUpperCase());
+                    } catch (Exception e) {
+                        System.out.println("Invalid role! Defaulting to USER.");
+                        role = Role.USER;
+                    }
 
-                        User loggedUser = service.login(loginId);
+                    userService.registerUser(new User(name, email, password, role));
+                    break;
 
-                        if (loggedUser == null) {
-                            System.out.println(" Invalid login!");
-                            break;
-                        }
+                case 2:
+                    System.out.print("Enter email: ");
+                    String loginEmail = InputUtil.getString(scanner);
 
-                        System.out.println("Welcome " + loggedUser.getName());
+                    System.out.print("Enter password: ");
+                    String loginPassword = InputUtil.getString(scanner);
 
-                        Role role = loggedUser.getRole();
+                    User loggedInUser = userService.loginUser(loginEmail, loginPassword);
 
-                        if (role == Role.ADMIN) {
-                            adminMenu(sc, service);
+                    if (loggedInUser != null){
+                        System.out.println("Welcome, " + loggedInUser.getName() + "!");
+
+                        if (loggedInUser.getRole() == Role.ADMIN){
+                            adminMenu(scanner, bookService);
                         } else {
-                            userMenu(sc, service, loggedUser);
+                            userMenu(scanner, bookService, loggedInUser);
                         }
-                        break;
+                    }
+                    break;
 
-                    // ================= EXIT =================
-                    case 3:
-                        System.out.println(" Exiting system...");
-                        sc.close();
-                        return;
+                case 3:
+                    System.out.println("Exiting... Thank you!");
+                    running = false; 
+                    break;
 
-                    default:
-                        System.out.println(" Invalid choice");
-                }
-
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input! Please enter numbers only.");
+                default:
+                    System.out.println("Invalid choice! Try again.");
             }
         }
+
+        scanner.close();
     }
 
     // ================= ADMIN MENU =================
-    public static void adminMenu(Scanner sc, LibraryService service) {
+    public static void adminMenu(Scanner scanner, BookService bookService){
 
-        while (true) {
+        boolean isAdminMenu = true; 
 
-            System.out.println("\n===== ADMIN MENU =====");
+        while(isAdminMenu){
+            System.out.println("\n--- ADMIN MENU ---");
             System.out.println("1. Add Book");
-            System.out.println("2. Show Books");
-            System.out.println("3. Issue Book");
-            System.out.println("4. Logout");
+            System.out.println("2. View Books");
+            System.out.println("3. Update Book");
+            System.out.println("4. Remove Book");
+            System.out.println("5. Logout");
+
             System.out.print("Enter choice: ");
+            int choice = InputUtil.getInt(scanner);
 
-            try {
-                int ch = Integer.parseInt(sc.nextLine());
+            switch(choice){
 
-                switch (ch) {
+                case 1:
+                    System.out.print("Enter Book ID: ");
+                    int id = InputUtil.getInt(scanner);
 
-                    case 1:
-                        System.out.print("Enter Book ID: ");
-                        int id = Integer.parseInt(sc.nextLine());
+                    System.out.print("Enter Title: ");
+                    String title = InputUtil.getString(scanner);
 
-                        System.out.print("Enter Title: ");
-                        String title = sc.nextLine();
+                    System.out.print("Enter Author: ");
+                    String author = InputUtil.getString(scanner);
 
-                        System.out.print("Enter Author: ");
-                        String author = sc.nextLine();
+                    bookService.addBook(new Book(id, title, author));
+                    break;
 
-                        service.addBook(new Book(id, title, author));
-                        break;
+                case 2:
+                    bookService.viewBooks();
+                    break;
 
-                    case 2:
-                        service.showBooks();
-                        break;
+                case 3:
+                    System.out.print("Enter Book ID: ");
+                    int upId = InputUtil.getInt(scanner);
 
-                    case 3:
-                        System.out.print("Enter User ID: ");
-                        int uid = Integer.parseInt(sc.nextLine());
+                    System.out.print("Enter new Title: ");
+                    String newTitle = InputUtil.getString(scanner);
 
-                        System.out.print("Enter Book ID: ");
-                        int bid = Integer.parseInt(sc.nextLine());
+                    System.out.print("Enter new Author: ");
+                    String newAuthor = InputUtil.getString(scanner);
 
-                        service.issueBook(uid, bid);
-                        break;
+                    bookService.updateBook(upId, newTitle, newAuthor);
+                    break;
 
-                    case 4:
-                        System.out.println(" Logging out...");
-                        return;
+                case 4:
+                    System.out.print("Enter Book ID: ");
+                    int delId = InputUtil.getInt(scanner);
 
-                    default:
-                        System.out.println(" Invalid choice");
-                }
+                    bookService.removeBook(delId);
+                    break;
 
-            } catch (NumberFormatException e) {
-                System.out.println(" Invalid input! Please enter numbers only.");
+                case 5:
+                    System.out.println("Logging out...");
+                    isAdminMenu = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid choice! Try again.");
             }
         }
     }
 
     // ================= USER MENU =================
-    public static void userMenu(Scanner sc, LibraryService service, User user) {
+    public static void userMenu(Scanner scanner, BookService bookService, User user){
 
-        while (true) {
+        boolean isUserMenu = true; 
 
-            System.out.println("\n===== USER MENU =====");
-            System.out.println("1. Show Books");
-            System.out.println("2. Issue Book");
-            System.out.println("3. Return Book");
-            System.out.println("4. Logout");
+        while(isUserMenu){
+            System.out.println("\n--- USER MENU ---");
+            System.out.println("1. View Books");
+            System.out.println("2. Search Book");
+            System.out.println("3. Issue Book");
+            System.out.println("4. Return Book");
+            System.out.println("5. Logout");
+
             System.out.print("Enter choice: ");
+            int choice = InputUtil.getInt(scanner);
 
-            try {
-                int ch = Integer.parseInt(sc.nextLine());
+            switch(choice){
 
-                switch (ch) {
+                case 1:
+                    bookService.viewBooks();
+                    break;
 
-                    case 1:
-                        service.showBooks();
-                        break;
+                case 2:
+                    System.out.print("Enter keyword: ");
+                    String keyword = InputUtil.getString(scanner);
 
-                    case 2:
-                        System.out.print("Enter Book ID: ");
-                        int bid = Integer.parseInt(sc.nextLine());
+                    bookService.searchBooks(keyword);
+                    break;
 
-                        service.issueBook(user.getId(), bid);
-                        break;
+                case 3:
+                    System.out.print("Enter Book ID: ");
+                    int issueId = InputUtil.getInt(scanner);
 
-                    case 3:
-                        System.out.print("Enter Book ID: ");
-                        int rid = Integer.parseInt(sc.nextLine());
+                    bookService.issueBook(issueId, user.getEmail());
+                    break;
 
-                        service.returnBook(rid);
-                        break;
+                case 4:
+                    System.out.print("Enter Book ID: ");
+                    int returnId = InputUtil.getInt(scanner);
 
-                    case 4:
-                        System.out.println(" Logging out...");
-                        return;
+                    bookService.returnBook(returnId);
+                    break;
 
-                    default:
-                        System.out.println("Invalid choice");
-                }
+                case 5:
+                    System.out.println("Logging out...");
+                    isUserMenu = false;
+                    break;
 
-            } catch (NumberFormatException e) {
-                System.out.println(" Invalid input! Please enter numbers only.");
+                default:
+                    System.out.println("Invalid choice! Try again.");
             }
         }
     }

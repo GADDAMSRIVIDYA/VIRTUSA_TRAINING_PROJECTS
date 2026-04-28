@@ -1,29 +1,33 @@
 package com.library.model;
 
 public class User {
-    private int id;
+
     private String name;
-     private Role role;// "admin" or "user"
+    private String email;
+    private String password;
+    private Role role;
 
-    public User(int id, String name, Role role) {
-        this.id = id;
+    public User( String name,String email, String password, Role role) {
         this.name = name;
+        this.email = email;
+        this.password = password;
         this.role = role;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {
         return name;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     public Role getRole() {
         return role;
     }
-
-    public void display() {
-        System.out.println("ID: " + id + " | Name: " + name + " | Role: " + role);
-    }
+    
 }
