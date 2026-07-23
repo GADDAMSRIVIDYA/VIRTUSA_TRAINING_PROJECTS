@@ -1,0 +1,6 @@
+Lib/
+Scripts/
+share/
+__pycache__/
+expenses.csv
+*.png

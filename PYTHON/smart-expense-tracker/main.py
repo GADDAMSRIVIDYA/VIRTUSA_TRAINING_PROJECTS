@@ -32,6 +32,9 @@ def add_expense(df):
 
     try:
         date = datetime.strptime(date_input, "%Y-%m-%d")
+        if date > datetime.now():
+            print("Future dates are not allowed!")
+            return df
     except:
         print("Invalid date format")
         return df
@@ -45,6 +48,9 @@ def add_expense(df):
 
     try:
         amount = float(input("Enter amount: "))
+        if amount <= 0:
+            print("Amount must be greater than zero")
+            return df
     except:
         print("Invalid amount")
         return df
